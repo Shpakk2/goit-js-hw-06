@@ -20,9 +20,5 @@ const imagesItems = images.map(image =>
 )
 .join(" ");
 
-console.log(imagesItems)
-
-
-
 imagesGallery.insertAdjacentHTML("beforeend", imagesItems)
   
