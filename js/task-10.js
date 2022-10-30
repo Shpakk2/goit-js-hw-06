@@ -27,12 +27,12 @@ destroyBtn.addEventListener('click', () => {boxes.innerHTML = ''})
 
 function createBoxes(amount) {
   let counter = 1
-  let param = 20
+  let size = 20
   let array = []
 while (counter <= amount) {
   counter += 1;
-  param += 10
-  array.push(`<div style="width: ${param}px; height: ${param}px; background-color: ${getRandomHexColor()};"></div>`)
+  size += 10
+  array.push(`<div style="width: ${size}px; height: ${size}px; background-color: ${getRandomHexColor()};"></div>`)
 }
     boxes.innerHTML = array.join("")
 }
